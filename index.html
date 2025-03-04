@@ -1,102 +1,196 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>This one is for my Varchhu</title>
+    <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>This one is for my Nhi</title>
 
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
 
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+
+        #mainDiv {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #code {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        .comments {
+            color: #888;
+            font-style: italic;
+        }
+
+        #loveHeart {
+            position: relative;
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #heartspan {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #icon {
+            font-size: 40px;
+            color: red;
+        }
+
+        #messages {
+            font-size: 18px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        #loveu {
+            font-size: 20px;
+            color: #222;
+            margin-top: 10px;
+        }
+
+        .signature {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Responsive cho điện thoại */
+        @media screen and (max-width: 600px) {
+            #code {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            #icon {
+                font-size: 35px;
+            }
+
+            #messages {
+                font-size: 16px;
+            }
+
+            #loveu {
+                font-size: 18px;
+            }
+
+            .signature {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 </head>
 
 <body>
 
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">* THE CODE OF LOVE</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Nhi.<br />
-			Không biết em có đọc hết mấy dòng này không.<br />
-			<span class="comments">// Nhưng anh vẫn viết.</span><br />
-			Anh không giỏi nói những lời hoa mỹ.<br />
-			Cũng chẳng giỏi thể hiện cảm xúc.<br />
-			Chỉ biết rằng, từng ngày trôi qua, vẫn luôn có một người chờ em.<br />
-			<span class="comments">// Chờ tin nhắn. Chờ cuộc gọi. Chờ một ngày gần hơn.</span><br />
-			Anh không chắc tình yêu là gì.<br />
-			Chỉ biết rằng nếu thiếu em, mọi thứ sẽ nhạt đi rất nhiều.<br />
-			<span class="comments">// Và anh ghét sự nhạt nhẽo.</span><br />
-			<br>
-			<br>
-			Thế nên, cứ tiếp tục như bây giờ đi.<br />
-			Chỉ cần em vẫn còn ở đây.<br />
-			Chỉ cần anh vẫn còn có thể gọi tên em.<br />
-			<br>
-			<br>
-			Nếu em hiểu, hãy chạm vào trái tim bên dưới.<br />
-			<br>
-			<span id="heartspan">
-			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
-			</span>
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					Anh & Em – Không cần quá nhiều lời ❤️
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					CHỈ CẦN EM CÒN Ở ĐÂY.<br/>
-					<div class="signature">- Bình</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">/**</span><br />
+                <span class="space"/><span class="comments">* THE CODE OF LOVE</span><br />
+                <span class="space"/><span class="comments">*/</span><br />
+                Nhi.<br />
+                Không biết em có đọc hết mấy dòng này không.<br />
+                <span class="comments">// Nhưng anh vẫn viết.</span><br />
+                Anh không giỏi nói những lời hoa mỹ.<br />
+                Cũng chẳng giỏi thể hiện cảm xúc.<br />
+                Chỉ biết rằng, từng ngày trôi qua, vẫn luôn có một người chờ em.<br />
+                <span class="comments">// Chờ tin nhắn. Chờ cuộc gọi. Chờ một ngày gần hơn.</span><br />
+                Anh không chắc tình yêu là gì.<br />
+                Chỉ biết rằng nếu thiếu em, mọi thứ sẽ nhạt đi rất nhiều.<br />
+                <span class="comments">// Và anh ghét sự nhạt nhẽo.</span><br />
+                <br>
+                <br>
+                Thế nên, cứ tiếp tục như bây giờ đi.<br />
+                Chỉ cần em vẫn còn ở đây.<br />
+                Chỉ cần anh vẫn còn có thể gọi tên em.<br />
+                <br>
+                <br>
+                Nếu em hiểu, hãy chạm vào trái tim bên dưới.<br />
+                <br>
+                <span id="heartspan">
+                <a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+                </span>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        Anh & Em – Không cần quá nhiều lời ❤️
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        CHỈ CẦN EM CÒN Ở ĐÂY.<br/>
+                        <div class="signature">- Bình</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2016, 8, 5);
-together.setHours(16);
-together.setMinutes(30);
-together.setSeconds(0);
-together.setMilliseconds(0);
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2016, 8, 5);
+        together.setHours(16);
+        together.setMinutes(30);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
 
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+            document.body.appendChild(msg);
+            $("#code").css("display", "none")
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                startHeartAnimation();
+            }, 5000);
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
 
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
 </body>
+
 </html>
